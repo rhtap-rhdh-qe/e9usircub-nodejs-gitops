@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: e9usircub-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: e9usircub-nodejs 
+  name: e9usircub-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: e9usircub-nodejs 
